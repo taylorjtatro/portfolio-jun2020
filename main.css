@@ -1,0 +1,171 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    background-color: goldenrod;
+    padding: .5rem 1.5rem;
+    border-radius: .25rem;
+}
+
+
+
+header {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    align-items: center;
+    padding: 2rem;
+    
+}
+
+header > h1 {
+    padding-bottom: 1rem;
+}
+
+header > article > p {
+    padding-bottom: 1rem;
+}
+
+.projects {
+    padding: 2rem;
+}
+
+.projects > ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    list-style: none;
+    grid-gap: 1rem;
+}
+
+.projects > ul > li {
+    border-radius: .5rem;
+    border: 1px solid #808080;
+}
+
+.projects > ul > li > figure {
+    height: 220px;
+    width: 100%;
+    overflow: hidden;
+    border-top-left-radius: .25rem;
+    border-top-right-radius: .25rem;
+    position: relative;
+}
+
+.projects > ul > li >  figure > img {
+    width: 100%;
+    
+}
+
+.projects > ul > li > figure > figcaption {
+    width: 100%;
+    padding: 1.25rem;
+    background: rgba(0,0,0,.7);
+    position: absolute;
+    bottom: 0;
+}
+
+.projects > ul > li > figure > figcaption > h3 {
+    color: #fff;
+    font-weight: 1.25rem;
+}
+
+.projects > ul > li > p {
+    padding: 1.25rem 1rem;
+}
+
+.projects > ul > li > button {
+    padding: .75rem 1.25rem;
+    margin-left: 1.25rem;
+    margin-bottom: 1rem;
+    border: none;
+    border-radius: .25rem;
+    background-color: goldenrod;
+    cursor: pointer;
+}
+
+.projects > ul > li button:hover {
+    opacity: .6;
+}
+
+
+
+
+
+
+/*Modal properties*/
+.modal {
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.7);
+    padding-top: 100px;
+}
+
+.modal > .modal-content {
+    width: 80%;
+    margin: auto;
+    color: red;
+}
+
+
+
+
+.iframe-container {
+    overflow: hidden;
+
+    padding-top: 56.25%;
+    position: relative;
+  }
+   
+  .iframe-container iframe {
+     border: 0;
+     height: 100%;
+     left: 0;
+     position: absolute;
+     top: 0;
+     width: 100%;
+  }
+
+
+
+
+
+
+
+
+
+
+
+/* Try and add iframes for the models 
+
+.i-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 56.25%;
+}
+
+iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
+
+*/
