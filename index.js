@@ -1,10 +1,17 @@
-let modal = document.querySelector('#projects-section');
+let modal = document.querySelector('.modal');
+let projectsModal = document.querySelector('#projects-section');
+let aboutModal = document.querySelector('#about-section');
 let x = document.querySelector('.x');
 let projectButton = document.querySelector('.projectButton');
-console.log(projectButton)
+let aboutButton = document.querySelector('.aboutButton');
+
 
 projectButton.onclick = function() {
-    modal.style.display = 'block';
+    projectsModal.style.display = 'block';
+}
+
+aboutButton.onclick = function() {
+    aboutModal.style.display = 'block';
 }
 
 x.onclick = function() {
