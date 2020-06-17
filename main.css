@@ -36,13 +36,72 @@ header > article > p {
     padding-bottom: 1rem;
 }
 
+
+
+
+/*Modal properties*/
+.modal {
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.7);
+    padding-top: 100px;
+    overflow: auto;
+    display: none;
+}
+
+.modal > .modal-content {
+    position: relative;
+    width: 80%;
+    margin: auto;
+    color: red;
+    border-radius: .25rem;
+    animation-name: modal;
+    animation-fill-mode: forwards;
+    animation-duration: .4s;
+}
+
+.modal > .modal-content > .projects > .mheader > h1 {
+    padding-bottom: 1rem;
+}
+
+
+span {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    font-size: 40px;
+    border-radius: 50%;
+    /*background: blue;*/
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    color: black;
+    transition: all .4s;
+}
+
+span:hover {
+    color: red;
+    background-color: rgba(0,0,0,.7);
+    cursor: pointer;
+}
+
 .projects {
     padding: 2rem;
+    background-color: #fff;
+    border-radius: .5rem;
+    position: relative;
+    padding-top: 1rem;
 }
 
 .projects > ul {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(311px, 1fr));
     list-style: none;
     grid-gap: 1rem;
 }
@@ -99,45 +158,29 @@ header > article > p {
 
 
 
-
-
-
-/*Modal properties*/
-.modal {
-    z-index: 1;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0,0,0,.7);
-    padding-top: 100px;
-}
-
-.modal > .modal-content {
-    width: 80%;
-    margin: auto;
-    color: red;
+@keyframes modal {
+    0% {
+        top: -300px;
+        opacity: 0;
+    }
+    100% {
+        top: 0;
+        opacity: 1;
+    }
 }
 
 
+@media only screen and (max-width: 486px) {
+    .modal {
+        padding-top: 0;
+    }
+    
+    .modal > .modal-content {
+        width: 100%;
+    }
+}
 
 
-.iframe-container {
-    overflow: hidden;
-
-    padding-top: 56.25%;
-    position: relative;
-  }
-   
-  .iframe-container iframe {
-     border: 0;
-     height: 100%;
-     left: 0;
-     position: absolute;
-     top: 0;
-     width: 100%;
-  }
 
 
 

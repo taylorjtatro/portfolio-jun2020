@@ -9,28 +9,24 @@
         
         <title>Taylor J Tatro</title>
     </head>
-
+<body>
     <div class="main-container">
         <header>
             <h1>Taylor J. Tatro</h1>
             <article>
                 <p>I am an aspiring web-developer. Welcome to my page! Make this into a sticky shrink header that would be cool.</p>
-                <a href="#projects">About</a>
+                <a href="#projects" class="projectButton">About</a>
                 <a href="#">Projects</a>
                 <a href="#">Contact</a>
             </article>
         </header>
-
+<!--
         <section id="projects" class="projects">
             <ul>
                 <li>
                     <figure>
                         <img src="img/covid.png">
-                        <!--Try and add iframe instead of img>
-                        <div class="i-container">
-                        <iframe src="https://taylorjtatro.github.io/tic-tac-toe/"></iframe>
-                        </div>
-                    -->
+
                         <figcaption>
                             <h3>Covid-19 Data Tracker</h3>
                         </figcaption>
@@ -41,11 +37,7 @@
                 <li>
                     <figure>
                         <img src="img/tic-tac-toe.png">
-                        <!--Try and add iframe instead of img>
-                        <div class="i-container">
-                        <iframe src="https://taylorjtatro.github.io/tic-tac-toe/"></iframe>
-                        </div>
-                    -->
+
                         <figcaption>
                             <h3>Tic-Tac-Toe</h3>
                         </figcaption>
@@ -56,11 +48,7 @@
                 <li>
                     <figure>
                         <img>
-                        <!--Try and add iframe instead of img>
-                        <div class="i-container">
-                        <iframe src="https://taylorjtatro.github.io/tic-tac-toe/"></iframe>
-                        </div>
-                    -->
+
                         <figcaption>
                             <h3>Google Calendar Favorite Places</h3>
                         </figcaption>
@@ -70,7 +58,9 @@
                 </li>
             </ul>
         </section>
+    -->
 
+<!--
         <div class="modal">
             <div class="modal-content">
                 <div class="header">
@@ -85,10 +75,70 @@
                 <div class="mfooter">Footer content</div>
             </div>
         </div>
+    -->
 
-
+    <div class="modal" id="projects-section">
+        <div class="modal-content">
+            <section id="projects" class="projects">
+                <span class="x">&times</span>
+                <div class="mheader">
+                    <h1>Projects</h1>
+                </div>
+                <ul>
+                    <li>
+                        <figure>
+                            <img src="img/covid1.png">
+                            <!--Try and add iframe instead of img>
+                            <div class="i-container">
+                            <iframe src="https://taylorjtatro.github.io/tic-tac-toe/"></iframe>
+                            </div>
+                        -->
+                            <figcaption>
+                                <h3>Covid-19 Data Tracker</h3>
+                            </figcaption>
+                        </figure>
+                        <p>This website utilizes ES6, AJAX, Webpack, and an API to pull and display live data...</p>
+                        <button>Learn More</button>
+                    </li>
+                    <li>
+                        <figure>
+                            <img src="img/tic-tac-toe.png">
+                            <!--Try and add iframe instead of img>
+                            <div class="i-container">
+                            <iframe src="https://taylorjtatro.github.io/tic-tac-toe/"></iframe>
+                            </div>
+                        -->
+                            <figcaption>
+                                <h3>Tic-Tac-Toe</h3>
+                            </figcaption>
+                        </figure>
+                        <p>Here I created a tic-tac-toe game using javascript, animations, and something else...</p>
+                        <button>Learn More</button>
+                    </li>
+                    <li>
+                        <figure>
+                            <img>
+                            <!--Try and add iframe instead of img>
+                            <div class="i-container">
+                            <iframe src="https://taylorjtatro.github.io/tic-tac-toe/"></iframe>
+                            </div>
+                        -->
+                            <figcaption>
+                                <h3>Google Calendar Favorite Places</h3>
+                            </figcaption>
+                        </figure>
+                        <p>Not finished yet, but here I am creating a website to track all of our favorite hotspots to take the kid...</p>
+                        <button>Learn More</button>
+                    </li>
+                </ul>
+            </section>
+        </div>
     </div>
 
 
+
+    </div>
+<script type="text/javascript" src="index.js"></script>
+</body>
 
 </html>
